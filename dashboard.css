@@ -1,0 +1,191 @@
+/* Fonts */
+@import url("https://fonts.googleapis.com/css2?display=swap&family=Inter:wght@400;500;700;900&family=Noto+Sans:wght@400;500;700;900");
+
+/* Theme */
+:root {
+  --brand-green: #54cf17;
+  --bg-foam: #f2f4f0;
+  --text-dark: #131811;
+  --muted: #6f8863;
+  --border: #dfe5dc;
+
+  --radius-sm: 8px;
+  --radius-md: 12px;
+
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 20px;
+  --space-6: 24px;
+  --space-8: 32px;
+}
+
+/* Base */
+*,
+*::before,
+*::after { box-sizing: border-box; }
+
+html, body { height: 100%; }
+
+body {
+  margin: 0;
+  color: var(--text-dark);
+  background: #fff;
+  font-family: Inter, "Noto Sans", system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial, sans-serif;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+svg { display: block; }
+
+/* Layout */
+.page { min-height: 100vh; display: flex; flex-direction: column; }
+
+.container { width: 100%; max-width: 960px; margin-inline: auto; padding-inline: 16px; }
+
+.section { padding: 20px 0; }
+
+/* Header */
+.site-header { border-bottom: 1px solid var(--bg-foam); padding: 12px 0; }
+
+.header-inner { display: flex; align-items: center; justify-content: space-between; gap: 24px; }
+
+.brand { display: flex; align-items: center; gap: 12px; }
+
+.brand-mark { width: 16px; height: 16px; color: var(--text-dark); }
+
+.brand-name { margin: 0; font-size: 18px; font-weight: 700; letter-spacing: -0.015em; }
+
+.header-right { display: flex; align-items: center; gap: 16px; }
+
+.main-nav { display: none; gap: 36px; margin-right: 8px; }
+
+.nav-link { color: var(--text-dark); text-decoration: none; font-size: 14px; font-weight: 500; }
+
+/* Header actions */
+.icon-btn {
+  appearance: none; border: 0; border-radius: var(--radius-sm);
+  height: 40px; padding: 0 10px;
+  display: inline-flex; align-items: center; justify-content: center;
+  background: var(--bg-foam); color: var(--text-dark); cursor: pointer;
+}
+
+.avatar {
+  width: 40px; height: 40px; border-radius: 999px;
+  background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBgwqro28-dmuXS4kXFThwlrfUu0-1JedgTJjT3bnv7bx0wxKGls5rEiqCGdohe9NJ5_5UysEOu7eyxXQ4IifYoxienJnmMCnnaj18eYZ2h0kX3B5b3wKxtb1sPV3JD3jzAA3PV8Zi2X944Zxm34RZhpOGNbdWdgSeWHbhfDiSaMfRdGJPFWighvG9BveUN2b1qEIwToENum46ceofuZmGoMLmhiw53TmEoQVEfSOgWWd8wT9wlQcmlyZVds55U5agga6lS3-zhQcY");
+  background-size: cover; background-position: center; background-repeat: no-repeat;
+}
+
+/* Intro */
+.intro { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 12px; padding: 16px; }
+
+.intro-title { margin: 0; font-size: 32px; font-weight: 800; letter-spacing: -0.02em; }
+
+.intro-subtitle { margin: 0; font-size: 14px; color: var(--muted); }
+
+/* Stats */
+.stats-row { display: flex; flex-wrap: wrap; gap: 16px; padding: 16px; }
+
+.stat {
+  min-width: 158px; flex: 1 1 0; display: flex; flex-direction: column; gap: 8px;
+  border-radius: var(--radius-md); padding: 24px; background: var(--bg-foam);
+}
+
+.stat-label { margin: 0; font-size: 16px; font-weight: 600; }
+
+.stat-value { margin: 0; font-size: 24px; font-weight: 800; letter-spacing: -0.02em; }
+
+/* Feature card */
+.feature-card {
+  margin: 8px 16px; display: flex; align-items: stretch; gap: 16px;
+  border-radius: var(--radius-md); background: #fff;
+}
+
+.feature-copy { display: flex; flex-direction: column; gap: 12px; flex: 2 2 0; }
+
+.feature-title { margin: 0; font-size: 16px; font-weight: 700; }
+
+.feature-desc { margin: 0; color: var(--muted); font-size: 14px; }
+
+.feature-media {
+  flex: 1 1 0; width: 100%; aspect-ratio: 16 / 9;
+  border-radius: var(--radius-md);
+  background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuD2ugjX5bAM5LA2_a391gtNtcuiEEctK_fiv2LhB_fnfBNZYcSiY8K8DpCQ7vcqCoGM3h5RAsX30_gKH_5ixwigqhFCv9H4EDQKLOoMA-S_Gg-ciXGtUxwZhrOr6KRbq6KydWH8t1YGEpBaxJsH1MmMtj_kG5Szzdlrjzg6azonNfJCx2RmGjGgf28jvsy_epuTdHJ8jlYD1owGMZbFrntrT6sT0-agYIc1RJ5AykBcbHRgFTtzgge7frjo_gzJLvBRBG9W2_uWMfo");
+  background-position: center; background-repeat: no-repeat; background-size: cover;
+}
+
+/* Buttons */
+.btn {
+  appearance: none; border: 0; border-radius: var(--radius-sm);
+  display: inline-flex; align-items: center; justify-content: center;
+  height: 40px; padding: 0 16px;
+  font-weight: 700; letter-spacing: 0.015em;
+  color: var(--text-dark); text-decoration: none; cursor: pointer;
+}
+
+.btn-sm { height: 32px; font-weight: 600; }
+
+.btn-primary { background: var(--brand-green); }
+
+.btn-neutral { background: var(--bg-foam); }
+
+/* Recent Reports */
+.section-heading {
+  margin: 12px 16px; font-size: 22px; font-weight: 800; letter-spacing: -0.015em;
+}
+
+.reports { padding: 0 16px 16px 16px; }
+
+.reports-container {
+  border: 1px solid var(--border); border-radius: var(--radius-sm); background: #fff; overflow: hidden;
+  container-type: inline-size; /* enables @container queries below */
+}
+
+.table-wrap { overflow-x: auto; }
+
+.table { width: 100%; border-collapse: collapse; }
+
+.table thead tr { background: #fff; }
+
+.table th,
+.table td {
+  padding: 12px 16px; text-align: left; font-size: 14px;
+  border-top: 1px solid transparent;
+}
+
+.table tbody tr { border-top: 1px solid var(--border); }
+
+.col { width: 400px; color: var(--text-dark); }
+
+.muted { color: var(--muted); }
+
+.strong { color: var(--muted); font-weight: 700; letter-spacing: 0.015em; }
+
+/* Score bar */
+.score { display: flex; align-items: center; gap: 12px; }
+
+.score-track {
+  width: 88px; height: 4px; border-radius: 2px; overflow: hidden; background: var(--border);
+}
+
+.score-bar { height: 100%; border-radius: 2px; background: var(--text-dark); width: 0; }
+
+/* Per-row widths (tweak as needed) */
+.bar-88 { width: 100%; }
+.bar-75 { width: 75%; }
+.bar-92 { width: 100%; }
+
+.score-text { margin: 0; font-size: 14px; font-weight: 600; color: var(--text-dark); }
+
+/* Responsive */
+@media (min-width: 480px) {
+  .main-nav { display: flex; }
+}
+
+/* Container queries to progressively hide columns at narrow container widths */
+@container (max-width: 600px) { .col-600 { display: none; } }
+@container (max-width: 480px) { .col-480 { display: none; } }
+@container (max-width: 360px) { .col-360 { display: none; } }
+@container (max-width: 240px) { .col-240 { display: none; } }
+@container (max-width: 120px) { .col-120 { display: none; } }

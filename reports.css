@@ -1,0 +1,163 @@
+/* Fonts */
+@import url("https://fonts.googleapis.com/css2?display=swap&family=Inter:wght@400;500;700;900&family=Noto+Sans:wght@400;500;700;900");
+
+/* Theme */
+:root {
+  --brand-green: #54cf17;
+  --bg-foam: #f2f4f0;
+  --text-dark: #131811;
+  --muted: #6f8863;
+  --border: #dfe5dc;
+
+  --radius-sm: 8px;
+  --radius-md: 12px;
+
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 20px;
+  --space-6: 24px;
+}
+
+/* Base */
+*,
+*::before,
+*::after { box-sizing: border-box; }
+
+html, body { height: 100%; }
+
+body {
+  margin: 0;
+  color: var(--text-dark);
+  background: #fff;
+  font-family: Inter, "Noto Sans", system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial, sans-serif;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+svg { display: block; }
+
+/* Layout */
+.page { min-height: 100vh; display: flex; flex-direction: column; }
+
+.container { width: 100%; max-width: 960px; margin-inline: auto; padding-inline: 16px; }
+
+.section { padding: 20px 0; }
+
+/* Header */
+.site-header { border-bottom: 1px solid var(--bg-foam); padding: 12px 0; }
+
+.header-inner { display: flex; align-items: center; justify-content: space-between; gap: 24px; }
+
+.brand { display: flex; align-items: center; gap: 12px; }
+
+.brand-mark { width: 16px; height: 16px; color: var(--text-dark); }
+
+.brand-name { margin: 0; font-size: 18px; font-weight: 700; letter-spacing: -0.015em; }
+
+.main-nav { display: flex; gap: 36px; }
+
+.nav-link { color: var(--text-dark); text-decoration: none; font-size: 14px; font-weight: 500; }
+
+.avatar {
+  width: 40px; height: 40px; border-radius: 999px;
+  background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBDDdDvYZ6Phm2G776V-RjQNVo25-pz6ZxfJOxg0wcW7ypJC1Xhr7t2-SpoClRKJgkZFZ6Gf45kUJQRvFkAm3t0z0mfxJ5mb9CGxZnQXh6nGIIk3OvMwfenNIyLZQ2lkKfkATmXHFiE-PvJJA-ai6GEpaWk1qv_lAIu2-d_3E5MQacSIembeLBqV4knU3FYFtlmKx9QVWLN5p7L-2omkvhXEBWfFOGPLHAULwyTv1B-jw1-oKJ1CFjngMSbIg2yQ3IL4jQbG0JX3Bs");
+  background-size: cover; background-position: center; background-repeat: no-repeat;
+}
+
+/* Page head */
+.page-head { padding: 16px; }
+
+.page-title { margin: 0; font-size: 32px; font-weight: 800; letter-spacing: -0.02em; }
+
+.page-subtitle { margin: 4px 0 0 0; font-size: 14px; color: var(--muted); }
+
+/* Search */
+.search { padding: 0 16px; }
+
+.search-field { display: block; width: 100%; height: 48px; }
+
+.search-box {
+  display: flex; align-items: stretch; border-radius: var(--radius-sm); height: 48px; overflow: hidden;
+}
+
+.search-icon {
+  display: inline-flex; align-items: center; justify-content: center;
+  padding-left: 16px; padding-right: 8px; background: var(--bg-foam); color: var(--muted);
+}
+
+.search-input {
+  flex: 1 1 auto; border: none; outline: none; padding: 0 16px;
+  font-size: 16px; color: var(--text-dark); background: var(--bg-foam);
+}
+
+/* Tabs */
+.tabs {
+  display: flex; gap: 32px; border-bottom: 1px solid var(--border);
+  padding: 0 16px;
+}
+
+.tab {
+  display: inline-flex; align-items: center; justify-content: center;
+  padding: 16px 0 13px 0; text-decoration: none; color: var(--muted);
+  border-bottom: 3px solid transparent; font-size: 14px; font-weight: 700; letter-spacing: 0.015em;
+}
+
+.tab.active { color: var(--text-dark); border-bottom-color: var(--text-dark); }
+
+/* Table */
+.table-section { padding: 12px 16px 24px 16px; }
+
+.table-container {
+  border: 1px solid var(--border); border-radius: var(--radius-sm); background: #fff; overflow: hidden;
+  container-type: inline-size; /* enables container queries for columns */
+}
+
+.table { width: 100%; border-collapse: collapse; }
+
+.table thead tr { background: #fff; }
+
+.table th,
+.table td {
+  padding: 12px 16px; text-align: left; font-size: 14px; color: var(--text-dark);
+}
+
+.table tbody tr { border-top: 1px solid var(--border); }
+
+.col.w-60 { width: 15rem; }
+
+.muted { color: var(--muted); }
+
+.strong { color: var(--muted); font-weight: 700; letter-spacing: 0.015em; }
+
+/* Status badge */
+.badge {
+  display: inline-flex; align-items: center; justify-content: center;
+  height: 32px; padding: 0 16px; border-radius: var(--radius-sm);
+  background: var(--bg-foam); color: var(--text-dark); font-size: 14px; font-weight: 600;
+  width: 100%;
+}
+
+/* Footer */
+.site-footer { margin-top: auto; padding: 40px 0; }
+
+.footer-inner { text-align: center; }
+
+.footer-links { display: flex; flex-wrap: wrap; justify-content: center; gap: 24px; margin-bottom: 16px; }
+
+.footer-link { color: var(--muted); text-decoration: none; font-size: 16px; }
+
+.footer-inner > p { color: var(--muted); margin: 0; }
+
+/* Container queries: progressively hide columns as the container narrows */
+@container (max-width: 600px) { .col-600 { display: none; } }
+@container (max-width: 480px) { .col-480 { display: none; } }
+@container (max-width: 360px) { .col-360 { display: none; } }
+@container (max-width: 240px) { .col-240 { display: none; } }
+@container (max-width: 120px) { .col-120 { display: none; } }
+
+/* Responsive */
+@media (max-width: 640px) {
+  .main-nav { display: none; }
+}

@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>AgriSense — Reports</title>
+    <link rel="icon" type="image/x-icon" href="data:image/x-icon;base64," />
+    <link rel="stylesheet" href="reports.css" />
+  </head>
+  <body>
+    <div class="page">
+      <header class="site-header">
+        <div class="container header-inner">
+          <div class="brand">
+            <div class="brand-mark" aria-hidden="true">
+              <svg viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg" fill="currentColor">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M24 18.4228L42 11.475V34.3663C42 34.7796 41.7457 35.1504 41.3601 35.2992L24 42V18.4228Z"></path>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M24 8.18819L33.4123 11.574L24 15.2071L14.5877 11.574L24 8.18819ZM9 15.8487L21 20.4805V37.6263L9 32.9945V15.8487ZM27 37.6263V20.4805L39 15.8487V32.9945L27 37.6263ZM25.354 2.29885C24.4788 1.98402 23.5212 1.98402 22.646 2.29885L4.98454 8.65208C3.7939 9.08038 3 10.2097 3 11.475V34.3663C3 36.0196 4.01719 37.5026 5.55962 38.098L22.9197 44.7987C23.6149 45.0671 24.3851 45.0671 25.0803 44.7987L42.4404 38.098C43.9828 37.5026 45 36.0196 45 34.3663V11.475C45 10.2097 44.2061 9.08038 43.0155 8.65208L25.354 2.29885Z"></path>
+              </svg>
+            </div>
+            <h2 class="brand-name">AgriSense</h2>
+          </div>
+
+          <nav class="main-nav" aria-label="Primary">
+            <a class="nav-link" href="dashboard.html">Dashboard</a>
+            <a class="nav-link" href="analysis.html">Analysis</a>
+            <a class="nav-link" href="#">Devices</a>
+            <a class="nav-link" href="reports.html">Reports</a>
+            <a class="nav-link" href="settings.html">Settings</a>
+          </nav>
+
+          <div class="avatar" aria-hidden="true"></div>
+        </div>
+      </header>
+
+      <main>
+        <section class="section">
+          <div class="container">
+            <div class="page-head">
+              <div class="head-copy">
+                <p class="page-title">Reports</p>
+                <p class="page-subtitle">View and manage soil analysis reports.</p>
+              </div>
+            </div>
+
+            <div class="search">
+              <label class="search-field">
+                <div class="search-box">
+                  <div class="search-icon" aria-hidden="true">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 256 256">
+                      <path d="M229.66,218.34l-50.07-50.06a88.11,88.11,0,1,0-11.31,11.31l50.06,50.07a8,8,0,0,0,11.32-11.32ZM40,112a72,72,0,1,1,72,72A72.08,72.08,0,0,1,40,112Z"></path>
+                    </svg>
+                  </div>
+                  <input class="search-input" type="search" placeholder="Search reports" />
+                </div>
+              </label>
+            </div>
+
+            <div class="tabs">
+              <a class="tab active" href="#"><span>All</span></a>
+              <a class="tab" href="#"><span>Completed</span></a>
+              <a class="tab" href="#"><span>Pending</span></a>
+            </div>
+
+            <div class="table-section">
+              <div class="table-container">
+                <table class="table">
+                  <thead>
+                    <tr>
+                      <th class="col col-120">Report ID</th>
+                      <th class="col col-240">Date</th>
+                      <th class="col col-360">Location</th>
+                      <th class="col col-480 w-60">Status</th>
+                      <th class="col col-600 w-60 muted">Actions</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td class="col col-120">#20240715-001</td>
+                      <td class="col col-240 muted">July 15, 2024</td>
+                      <td class="col col-360 muted">Farm A, Region X</td>
+                      <td class="col col-480">
+                        <span class="badge">Completed</span>
+                      </td>
+                      <td class="col col-600 strong">View</td>
+                    </tr>
+                    <tr>
+                      <td class="col col-120">#20240710-002</td>
+                      <td class="col col-240 muted">July 10, 2024</td>
+                      <td class="col col-360 muted">Farm B, Region Y</td>
+                      <td class="col col-480">
+                        <span class="badge">Completed</span>
+                      </td>
+                      <td class="col col-600 strong">View</td>
+                    </tr>
+                    <tr>
+                      <td class="col col-120">#20240705-003</td>
+                      <td class="col col-240 muted">July 5, 2024</td>
+                      <td class="col col-360 muted">Farm C, Region Z</td>
+                      <td class="col col-480">
+                        <span class="badge">Pending</span>
+                      </td>
+                      <td class="col col-600 strong">View</td>
+                    </tr>
+                    <tr>
+                      <td class="col col-120">#20240630-004</td>
+                      <td class="col col-240 muted">June 30, 2024</td>
+                      <td class="col col-360 muted">Farm A, Region X</td>
+                      <td class="col col-480">
+                        <span class="badge">Completed</span>
+                      </td>
+                      <td class="col col-600 strong">View</td>
+                    </tr>
+                    <tr>
+                      <td class="col col-120">#20240625-005</td>
+                      <td class="col col-240 muted">June 25, 2024</td>
+                      <td class="col col-360 muted">Farm B, Region Y</td>
+                      <td class="col col-480">
+                        <span class="badge">Completed</span>
+                      </td>
+                      <td class="col col-600 strong">View</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+
+          </div>
+        </section>
+      </main>
+
+      <footer class="site-footer">
+        <div class="container footer-inner">
+          <nav class="footer-links" aria-label="Footer">
+            <a class="footer-link" href="#">Privacy Policy</a>
+            <a class="footer-link" href="#">Terms of Service</a>
+            <a class="footer-link" href="#">Contact Us</a>
+          </nav>
+          <p class="copyright">© 2025 AgriSense. All rights reserved.</p>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
