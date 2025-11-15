@@ -1,0 +1,61 @@
+{
+  "profileFields": [
+    {
+      "id": "name",
+      "label": "Name",
+      "type": "text",
+      "placeholder": "Enter your name",
+      "value": "Navyum"
+    },
+    {
+      "id": "email",
+      "label": "Email",
+      "type": "email",
+      "placeholder": "Enter your email",
+      "value": "navyum@agrisense.com"
+    },
+    {
+      "id": "phone",
+      "label": "Phone",
+      "type": "tel",
+      "placeholder": "Enter your phone number",
+      "value": "+91 8708335298"
+    }
+  ],
+  "preferences": {
+    "languages": [
+      { "value": "", "label": "Select Language" },
+      { "value": "english", "label": "English" },
+      { "value": "hindi", "label": "Hindi" },
+      { "value": "punjabi", "label": "Punjabi" },
+      { "value": "spanish", "label": "Spanish" }
+    ],
+    "timezones": [
+      { "value": "", "label": "Select Timezone" },
+      { "value": "ist", "label": "IST (India Standard Time)" },
+      { "value": "pst", "label": "PST (Pacific Standard Time)" },
+      { "value": "est", "label": "EST (Eastern Standard Time)" },
+      { "value": "gmt", "label": "GMT (Greenwich Mean Time)" }
+    ]
+  },
+  "appSettings": [
+    {
+      "id": "notifications",
+      "title": "Notifications",
+      "description": "Enable push notifications for new data and alerts",
+      "enabled": true
+    },
+    {
+      "id": "autoSync",
+      "title": "Auto Sync",
+      "description": "Automatically sync data from connected devices",
+      "enabled": false
+    },
+    {
+      "id": "darkMode",
+      "title": "Dark Mode",
+      "description": "Switch to dark theme for better visibility at night",
+      "enabled": false
+    }
+  ]
+}

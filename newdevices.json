@@ -1,0 +1,42 @@
+{
+  "devices": [
+    {
+      "id": "soilsense-pro",
+      "name": "SoilSense Pro",
+      "description": "Flagship device offering comprehensive soil analysis with advanced features and connectivity.",
+      "imageClass": "img-pro",
+      "link": "#"
+    },
+    {
+      "id": "soilsense-lite",
+      "name": "SoilSense Lite",
+      "description": "Compact and affordable device for basic soil analysis, ideal for small-scale farming and gardening.",
+      "imageClass": "img-lite",
+      "link": "#"
+    },
+    {
+      "id": "soilsense-max",
+      "name": "SoilSense Max",
+      "description": "Professional-grade device with extended range and enhanced accuracy for large-scale agricultural operations.",
+      "imageClass": "img-pro",
+      "link": "#"
+    }
+  ],
+  "purchaseOptions": [
+    {
+      "text": "Visit Partner Store",
+      "link": "#",
+      "style": "btn-neutral"
+    },
+    {
+      "text": "Contact Sales",
+      "link": "#contact",
+      "style": "btn-neutral"
+    },
+    {
+      "text": "Request Demo",
+      "link": "#demo",
+      "style": "btn-neutral"
+    }
+  ]
+}
