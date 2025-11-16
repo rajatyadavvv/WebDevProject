@@ -38,6 +38,7 @@ Full **CRUD (Create, Read, Update, Delete)** module for **Reports**:
 - Clean model definition (`models/Report.js`)
 
 ---
+```md
 
 ##  Project Structure
 
@@ -73,7 +74,7 @@ WebDevProject/
 ├── addReport.ejs
 └── editReport.ejs
 
-
+```
 ---
 
 ##  Pages Overview
