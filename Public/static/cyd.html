@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Agrisense — Connect Your Device</title>
+  <link rel="stylesheet" href="/css/cyd.css" />
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="container header-inner">
+
+      <div class="brand">
+        <div class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg" fill="currentColor">
+            <path
+              d="M42.4379 44C42.4379 44 36.0744 33.9038 41.1692 24C46.8624 12.9336 42.2078 4 42.2078 4L7.01134 4C7.01134 4 11.6577 12.932 5.96912 23.9969C0.876273 33.9029 7.27094 44 7.27094 44L42.4379 44Z">
+            </path>
+          </svg>
+        </div>
+        <h2 class="brand-name">Agrisense</h2>
+      </div>
+
+      <nav class="main-nav">
+        <a class="nav-link" href="/dashboard">Dashboard</a>
+        <a class="nav-link" href="/analysis">Analysis</a>
+        <a class="nav-link" href="/reports">Reports</a>
+        <a class="nav-link" href="/settings">Settings</a>
+        <a class="nav-link active" href="/cyd">Connect Device</a>
+      </nav>
+
+      <div class="avatar"></div>
+    </div>
+  </header>
+
+  <!-- MAIN CONTENT -->
+  <main class="cyd-container">
+    <h1 class="cyd-title">Connect Your Device</h1>
+    <p class="cyd-description">
+      Add your SoilSense or WeatherSense device to start tracking soil and environmental data in real time.
+    </p>
+
+    <div class="connect-box">
+
+      <!-- Step 1 -->
+      <div class="connect-step">
+        <h3>Step 1: Power On Your Device</h3>
+        <p>Make sure your device is turned on and nearby.</p>
+      </div>
+
+      <!-- Step 2 -->
+      <div class="connect-step">
+        <h3>Step 2: Enter Device ID</h3>
+        <input type="text" class="input" placeholder="Enter Device Code (e.g., SS_PRO_001)" />
+      </div>
+
+      <!-- Divider -->
+      <div class="divider">OR</div>
+
+      <!-- Step 3 -->
+      <div class="connect-step">
+        <h3>Step 3: Scan QR Code</h3>
+        <button class="btn-primary scan-btn">
+          Scan QR Code
+        </button>
+      </div>
+
+      <!-- Step 4 -->
+      <div class="connect-step">
+        <h3>Step 4: Connect to Wi-Fi</h3>
+        <input type="text" class="input" placeholder="Wi-Fi Name" />
+        <input type="password" class="input" placeholder="Password" />
+      </div>
+
+      <button class="btn-primary connect-btn">Connect Device</button>
+
+    </div>
+
+  </main>
+
+</body>
+
+</html>

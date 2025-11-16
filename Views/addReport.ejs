@@ -1,0 +1,27 @@
+<%- include("partials/header") %>
+<link rel="stylesheet" href="/css/reports.css">
+
+<div class="container" style="padding: 40px 0;">
+  <h2>Add Report</h2>
+
+  <form action="/reports/add" method="POST" class="form">
+    <label>Report ID</label>
+    <input type="text" name="reportId" class="input" required>
+
+    <label>Date</label>
+    <input type="text" name="date" class="input" required placeholder="July 15, 2024">
+
+    <label>Location</label>
+    <input type="text" name="location" class="input" required>
+
+    <label>Status</label>
+    <select name="status" class="input">
+      <option value="Completed">Completed</option>
+      <option value="Pending">Pending</option>
+    </select>
+
+    <button class="btn btn-primary" type="submit">Add Report</button>
+  </form>
+</div>
+
+<%- include("partials/footer") %>

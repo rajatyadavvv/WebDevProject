@@ -1,0 +1,78 @@
+<link rel="stylesheet" href="/css/settings.css">
+
+<div class="settings-layout">
+
+  <!-- Sidebar (KEEPING YOUR DESIGN) -->
+  <aside class="sidebar">
+    <div class="sidebar-header">
+      <div class="avatar"></div>
+      <h1 class="brand-name">Agrisense</h1>
+    </div>
+
+    <nav class="nav">
+      <a class="nav-item" href="/dashboard">Dashboard</a>
+      <a class="nav-item" href="/devices">Devices</a>
+      <a class="nav-item" href="/analysis">Analysis</a>
+      <a class="nav-item" href="/reports">Reports</a>
+      <a class="nav-item active" href="/settings">Settings</a>
+    </nav>
+  </aside>
+
+  <!-- Main content -->
+  <main class="content">
+
+    <!-- Page Title -->
+    <header class="content-head">
+      <p class="page-title">Settings</p>
+    </header>
+
+    <!-- Profile Section -->
+    <section class="section">
+      <h3 class="section-subtitle">Profile</h3>
+
+      <form class="form">
+        <div class="form-row">
+          <label class="label">Name</label>
+          <input type="text" class="input" placeholder="John Doe">
+        </div>
+
+        <div class="form-row">
+          <label class="label">Email</label>
+          <input type="email" class="input" placeholder="john@example.com">
+        </div>
+
+        <div class="form-row">
+          <label class="label">Phone</label>
+          <input type="tel" class="input" placeholder="+91 98765 43210">
+        </div>
+      </form>
+    </section>
+
+    <!-- Preferences Section -->
+    <section class="section">
+      <h3 class="section-subtitle">Preferences</h3>
+
+      <div class="form">
+        <div class="form-row">
+          <label class="label">Language</label>
+          <select id="language" class="input select"></select>
+        </div>
+
+        <div class="form-row">
+          <label class="label">Timezone</label>
+          <select id="timezone" class="input select"></select>
+        </div>
+      </div>
+    </section>
+
+    <!-- App Settings -->
+    <section class="section" id="app-settings-section">
+      <h3 class="section-subtitle">App Settings</h3>
+      <!-- settings.js fills this -->
+    </section>
+
+  </main>
+</div>
+
+<script src="/js/settings.js"></script>
+<%- include("partials/footer") %>

@@ -1,0 +1,93 @@
+<%- include("partials/header") %>
+  <link rel="stylesheet" href="/css/reports.css">
+
+  <div class="page">
+
+    <main>
+      <section class="section">
+        <div class="container">
+
+          <!-- Page Header Section -->
+          <div class="page-head">
+            <div class="head-copy">
+              <p class="page-title">Reports</p>
+              <p class="page-subtitle">View and manage soil analysis reports.</p>
+            </div>
+          </div>
+
+          <!-- Search Bar -->
+          <div class="search">
+            <label class="search-field">
+              <div class="search-box">
+                <div class="search-icon" aria-hidden="true">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+                    viewBox="0 0 256 256">
+                    <path
+                      d="M229.66,218.34l-50.07-50.06a88.11,88.11,0,1,0-11.31,11.31l50.06,50.07a8,8,0,0,0,11.32-11.32ZM40,112a72,72,0,1,1,72,72A72.08,72.08,0,0,1,40,112Z">
+                    </path>
+                  </svg>
+                </div>
+                <input class="search-input" type="search" placeholder="Search reports">
+              </div>
+            </label>
+          </div>
+
+          <!-- Tabs -->
+          <div class="tabs">
+            <a class="tab active" href="#"><span>All</span></a>
+            <a class="tab" href="#"><span>Completed</span></a>
+            <a class="tab" href="#"><span>Pending</span></a>
+          </div>
+
+          <!-- TABLE SECTION -->
+          <div class="table-section">
+            <div class="table-container">
+              <a href="/reports/add" class="btn btn-primary" style="margin-bottom:20px;">+ Add Report</a>
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th class="col col-120">Report ID</th>
+                    <th class="col col-240">Date</th>
+                    <th class="col col-360">Location</th>
+                    <th class="col col-480 w-60">Status</th>
+                    <th class="col col-600 w-60 muted">Actions</th>
+                  </tr>
+                </thead> 
+
+                <!-- STATIC REPORT ROWS (exactly original) -->
+                <tbody>
+                  <% reports.forEach(r=> { %>
+                    <tr>
+                      <td class="col col-120">
+                        <%= r.reportId %>
+                      </td>
+                      <td class="col col-240 muted">
+                        <%= r.date %>
+                      </td>
+                      <td class="col col-360 muted">
+                        <%= r.location %>
+                      </td>
+                      <td class="col col-480">
+                        <span class="badge">
+                          <%= r.status %>
+                        </span>
+                      </td>
+                      <td class="col col-600 strong">
+                        <a href="/reports/edit/<%= r._id %>">Edit</a> |
+                        <a href="/reports/delete/<%= r._id %>" style="color:red;">Delete</a>
+                      </td>
+                    </tr>
+                    <% }) %>
+                </tbody>
+
+              </table>
+            </div>
+          </div>
+
+        </div>
+      </section>
+    </main>
+
+    <%- include("partials/footer") %>
+
+  </div>

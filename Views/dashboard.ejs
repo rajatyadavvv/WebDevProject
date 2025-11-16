@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Agrisense — Dashboard</title>
+  <link rel="stylesheet" href="/css/dashboard.css" />
+</head>
+
+<body>
+  <%- include("partials/header") %>
+
+  <main>
+    <section class="section">
+      <div class="intro">
+  <div class="intro-text">
+    <p class="intro-title">Dashboard</p>
+    <p class="intro-subtitle">Welcome back!</p>
+  </div>
+</div>
+
+<!-- Stats Row -->
+<div class="stats-row"></div>
+
+<!-- Feature Card (optional, stays empty for now) -->
+<div class="feature-card">
+  <div class="feature-copy">
+    <p class="feature-title">Soil Analysis Overview</p>
+    <p class="feature-desc">A quick summary of your recent soil analysis activity.</p>
+  </div>
+  <div class="feature-media"></div>
+</div>
+
+<!-- Reports Table -->
+<section class="reports">
+  <h2 class="section-heading">Recent Reports</h2>
+  <div class="reports-container">
+    <div class="table-wrap">
+      <table class="table">
+        <thead>
+          <tr>
+            <th class="col col-120">ID</th>
+            <th class="col col-240">Date</th>
+            <th class="col col-360">Location</th>
+            <th class="col col-480">Score</th>
+            <th class="col col-600">Action</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+    </section>
+  </main>
+
+  
+  <%- include("partials/footer") %>
+  <script src="/js/dashboard.js"></script>
+</body>
+
+</html>
