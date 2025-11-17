@@ -31,10 +31,7 @@ function safe(str) {
     "'": "&#39;"
   })[ch]);
 }
-
-// -------------------------------------------------------
 // 1) Load Profile Fields
-// -------------------------------------------------------
 function loadProfileFields(fields) {
   const form = document.querySelector(".form");
   if (!form) return;
@@ -60,9 +57,7 @@ function loadProfileFields(fields) {
   form.innerHTML = formHTML;
 }
 
-// -------------------------------------------------------
 // 2) Load Language Options
-// -------------------------------------------------------
 function loadLanguages(languages) {
   const select = document.getElementById("language");
   if (!select) return;
@@ -76,9 +71,7 @@ function loadLanguages(languages) {
   select.innerHTML = optionsHTML;
 }
 
-// -------------------------------------------------------
 // 3) Load Timezones
-// -------------------------------------------------------
 function loadTimezones(timezones) {
   const select = document.getElementById("timezone");
   if (!select) return;
@@ -92,9 +85,7 @@ function loadTimezones(timezones) {
   select.innerHTML = optionsHTML;
 }
 
-// -------------------------------------------------------
 // 4) Load App Settings Section
-// -------------------------------------------------------
 function loadAppSettings(settings) {
   const section = document.getElementById("app-settings-section");
   if (!section) return;

@@ -35,7 +35,7 @@ function safe(text) {
 // Function 1: Load Device Cards
 function loadDevices(devices) {
   const subtitle = document.querySelector('.section-subtitle');
-  if (!subtitle) return; // page may not contain device section
+  if (!subtitle) return; 
 
   const container = subtitle.parentElement;
   if (!container) return;

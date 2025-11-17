@@ -1,23 +1,15 @@
-// -------------------------------
-//  1. IMPORTS
-// -------------------------------
+// IMPORTS
 const express = require("express");
 const path = require("path");
 const connectDB = require("./config/db");
 
-// -------------------------------
-//  2. INITIALIZE APP
-// -------------------------------
+// INITIALIZE APP
 const app = express();
 
-// -------------------------------
-//  3. CONNECT MONGODB
-// -------------------------------
+// CONNECT MONGODB
 connectDB();
 
-// -------------------------------
-//  4. MIDDLEWARE
-// -------------------------------
+//  MIDDLEWARE
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
@@ -29,9 +21,7 @@ app.set("view engine", "ejs");
 app.set("views", path.join(__dirname, "Views"));
 
 
-// -------------------------------
-//  5. ROUTES (STATIC HTML)
-// -------------------------------
+//  ROUTES (STATIC HTML)
 
 // Landing page
 app.get("/", (req, res) => {
@@ -55,9 +45,7 @@ app.get("/newdevice", (req, res) => {
 });
 
 
-// -------------------------------
-//  6. NORMAL EJS ROUTES (NO CRUD)
-// -------------------------------
+//  NORMAL EJS ROUTES
 app.get("/dashboard", (req, res) => {
     res.render("dashboard");
 });
@@ -83,20 +71,11 @@ app.get("/newdevices", (req, res) => {
 });
 
 
-// -------------------------------
-//  7. MONGODB CRUD ROUTES (IMPORTANT)
-// -------------------------------
+//  MONGODB CRUD ROUTES 
 const reportRoutes = require("./routes/reportRoutes");
-app.use("/reports", reportRoutes);   // FIRST time /reports is used
+app.use("/reports", reportRoutes); 
 
-// REMOVE THIS:  app.get("/reports"...)
-// It will break CRUD
-// Your reports.ejs will render from the CRUD route now
-
-
-// -------------------------------
-//  8. START SERVER
-// -------------------------------
+//   START SERVER
 app.listen(3000, () => {
     console.log("Server is running at http://localhost:3000");
 });
